@@ -8,8 +8,7 @@ namespace DocsAsyncExample
     {
         static async Task Main(string[] args)
         {
-            // Now the tasks will start concurrently, and will finish 
-            // after completion of each one of them.
+            // Now the tasks will start concurrently
             Console.WriteLine("Starting the countdown");
             Task<Toast> toastTask = ToastBread();
             Task<Bacon> baconTask = FryBacon();
